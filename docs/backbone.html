@@ -2826,7 +2826,7 @@ collection. The default implementation is just to pass it through.</p>
             </div>
             
             <div class="content"><div class='highlight'><pre>    <span class="hljs-attr">modelId</span>: <span class="hljs-keyword">function</span>(<span class="hljs-params">attrs, idAttribute</span>) {
-      <span class="hljs-keyword">return</span> attrs[idAttribute || <span class="hljs-variable language_">this</span>.<span class="hljs-property">model</span>.<span class="hljs-property"><span class="hljs-keyword">prototype</span></span>.<span class="hljs-property">idAttribute</span> || <span class="hljs-string">&#x27;id&#x27;</span>];
+      <span class="hljs-keyword">return</span> attrs[idAttribute || <span class="hljs-variable language_">this</span>.<span class="hljs-property">model</span>.<span class="hljs-property">idAttribute</span> || (<span class="hljs-variable language_">this</span>.<span class="hljs-property">model</span>.<span class="hljs-property"><span class="hljs-keyword">prototype</span></span> &amp;&amp; <span class="hljs-variable language_">this</span>.<span class="hljs-property">model</span>.<span class="hljs-property"><span class="hljs-keyword">prototype</span></span>.<span class="hljs-property">idAttribute</span>) || <span class="hljs-string">&#x27;id&#x27;</span>];
     },</pre></div></div>
             
         </li>

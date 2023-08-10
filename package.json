@@ -1,5 +1,5 @@
 {
-  "name": "backbone",
+  "name": "@fengzie/backbone",
   "description": "Give your JS App some Backbone with Models, Views, Collections, and Events.",
   "url": "http://backbonejs.org",
   "keywords": [
